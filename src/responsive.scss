@@ -1,0 +1,150 @@
+
+@media (max-width: 1024px) {
+    header{
+        height: 170px;
+
+        nav{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-self:center;
+                text-align: center;
+                position: relative;
+                top: -50%;
+                padding: 0;
+            }
+            .Button{
+                position: absolute;
+                right: 1%;
+                top: 1%;
+                min-width: 90px;
+                height: 40px;
+                font-size: 1rem;
+
+            }
+        }
+    }
+
+    .SlideCardList{
+        height: 350px;
+        overflow: hidden;
+    
+        .SlideCard{
+        width: 100%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &__descriptionContainer{
+            width: 96%;
+            height: 25%;
+            position: absolute;
+            bottom: 12%;
+            left: 2%;
+            border-radius: 3em;
+        }
+        &__description{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            h3{
+                font-size: 1rem;
+                border: none;
+            }
+            p{
+                font-size: .8rem;            
+            }
+            div{
+                font-size: .8rem;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &__paginationContainer{
+            top:90%;
+        }
+    }
+    }
+
+    .ServicesContainer{
+        p{
+            text-align: center;
+        }
+    }
+
+    .PeoplesContainer{
+        p{
+            text-align: center;
+        }
+    }
+
+    .FormContainer{
+        padding-bottom: 120px;
+        margin: 0;
+        width: 100%;
+
+        .row{
+            position: relative;
+            flex-direction: column;
+
+            .col{
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+
+                .SelectContainer{
+                    position: relative;
+                    left: -2.5%;
+                }
+            }
+        }
+        .Button{
+                position: absolute;
+                bottom: -15%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+    
+    .modal{  
+        .content{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border: none;
+
+        .col{
+            align-items: center;
+            text-align: center;
+            &.contact{
+                padding: 32px 32px 32px 32px;
+            }
+            &.presta, &.description{
+                border: none;
+            }
+            &.description{
+                padding: 0;
+                width: 80%;
+            }
+        }
+}}
