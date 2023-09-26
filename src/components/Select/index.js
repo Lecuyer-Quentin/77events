@@ -37,10 +37,7 @@ const Select = ({
               {!titleEmpty && (
                 <li onClick={() => changeValue(null)}>
                   <input
-                    // Ajout de onChange
-                    onChange={() => changeValue(null)}
-                    // Modif de defaultChecked en checked
-                    checked={!value}
+                    defaultChecked={!value}
                     name="selected" type="radio" />{" "}
                   Toutes
                 </li>
@@ -48,12 +45,10 @@ const Select = ({
               {selection.map((s) => (
                 <li key={s} onClick={() => changeValue(s)}>
                   <input
-                    // Modif de defaultChecked en checked
-                    checked={value === s}
+                    defaultChecked={value === s}
                     name="selected"
                     type="radio"
-                    // Ajout de onChange
-                    onChange={() => changeValue(s)}
+                    value={s}
                   />{" "}
                   {s}
                 </li>
